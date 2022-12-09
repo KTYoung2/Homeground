@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    color:#3f464d;
+    font-family: "Spoqa Han Sans Neo", "Sans-serif";
+}
+
+a {
+    all : unset;
+    /*a 태그 리셋셋*/
+}
+
+a:link {
+    text-decoration: none;
+    color: #3f464d;
+}
+
+
+a:visited {
+    text-decoration: none;
+    color: #3f464d;
+}
+
+a:active {
+    text-decoration: none;
+    color: #3f464d;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #3f464d;
+}
+
+
+.inner {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    /* 요소들 가운데 오라고 */
+    padding: 0 2rem;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: ghostwhite;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.head-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /*내용을 수평정렬 해야하니까 flex */
+    justify-content: space-between;
+    align-items: center;   
+} 
+
+.head-container .head-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+.head-container .head-list {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.head-container .head-name .head-list a:hover {
+    color :blueviolet;
+    cursor: pointer;
+}
+/*header 영역 끝*/
+
+
+/*section 01 */
+section {
+    width:100%;
+    background-color: ghostwhite;
+    position: relative;
+}
+
+.main {
+    height: 350px;
+    background-image: url("/img/rainbow.jpg");
+    background-size: cover;
+    background-position: center 10%;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    background-color:lavender;
+    opacity: 0.5;
+    z-index: 2;
+    margin-top: 60px;
+}
+
+.title-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3f464d;
+    margin-bottom: 0.8rem;
+}
+
+.message {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #3f464d;
+}
+
+/*섹션02*/
+.box1-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box1 {
+    width: 25%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 9px;
+    padding: 0.5rem 1rem;
+    margin: 0 1rem;
+    box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, 0.2);
+}
+
+.box1-title {
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    align-content:center;
+}
+
+.maintitle {
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+}
+
+/*섹션 2 아이콘 */
+.box1-icon {
+    font-size: 1.5rem;
+    margin: 0 7px;
+}
+
+
+.apple-style1 {
+    color:crimson;
+}
+
+
+.apple-style2 {
+    color :coral;
+}
+
+.apple-style3 {
+    color :gold
+}
+
+.apple-style4 {
+    color:darkgreen;
+}
+
+
+/*sesstion 03*/
+
+.roadmap-contanier {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.roadmap-title-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.roadmap-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color:#3f464d;
+}
+
+
+/*반응형 설정*/
+@media only screen and (min-width: 1200px) {
+    .inner {
+        max-width: 1200px;
+    }
+}
+
+/*화면 비율이 980px(스마트폰 기준) 이하면 
+.box1-container 요소들 사라짐*/
+@media only screen and (max-width: 900px) {
+    .box1-container {
+        display: none;
+    }
+}
