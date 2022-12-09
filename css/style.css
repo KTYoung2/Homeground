@@ -40,7 +40,7 @@ a:hover {
     height: 100%;
     margin: 0 auto;
     /* 요소들 가운데 오라고 */
-    padding: 0 2rem;
+    padding: 1.5rem 2rem;
 }
 
 header {
@@ -201,6 +201,21 @@ section {
     color:#3f464d;
 }
 
+.slide-prev {
+    font-size: 2rem;
+    color :blueviolet;
+    cursor: pointer;
+}
+
+.slide-next {
+    font-size: 2rem;
+    color: blueviolet;
+    cursor: pointer;
+}
+
+.arrow-container {
+    display: flex;
+}
 
 /*반응형 설정*/
 @media only screen and (min-width: 1200px) {
