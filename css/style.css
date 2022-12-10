@@ -41,6 +41,7 @@ a:hover {
     margin: 0 auto;
     /* 요소들 가운데 오라고 */
     padding: 1.5rem 2rem;
+    overflow: hidden;
 }
 
 header {
@@ -141,6 +142,12 @@ section {
     padding: 0.5rem 1rem;
     margin: 0 1rem;
     box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, 0.2);
+    transition: 0.4s;
+}
+
+/*마우스 효과주기*/
+.box1:hover {
+    transform: translate(0, -5px);
 }
 
 .box1-title {
@@ -150,6 +157,7 @@ section {
     font-size: 0.8rem;
     align-content:center;
 }
+
 
 .maintitle {
     font-weight: bold;
@@ -215,6 +223,119 @@ section {
 
 .arrow-container {
     display: flex;
+}
+
+.silde-prev {
+    font-size: 2rem;
+    cursor: pointer;
+
+}
+
+.silde-next {
+    font-size: 2rem;
+    cursor: pointer;
+    color: darkgray;
+}
+
+.class-list{
+    display: flex;
+    list-style: none;
+    margin: 1rem 0 0 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+.class-card {
+    /*사진이 영역을 넘치지 않게 설정*/
+    max-width: 260px;
+    box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, 0.2);
+    border-radius: 8px;
+    margin: 0 10px;
+    flex-shrink: 0;
+}
+
+.class-img {
+    width: 240px;
+    height: 150px;
+    border-radius: 8px 8px 0 0;
+}
+
+.class-container {
+    width: 100%;
+    padding: 0.5rem 1rem 1rem 1rem;
+    background-color: white;
+}
+
+.class-skill {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.class-type {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color:3f464d;
+    
+}
+
+.class-format {
+    font-size: 0.9rem;
+    color:darkgray;
+    background-color: lavender;
+    padding: 0.2rem;
+
+}
+
+.class-desc {
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.class-title{
+    font-weight: bold;
+    color: #3f464d;
+    width: 100%;
+}
+
+.class-detail {
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0.5rem;
+}
+
+li a:hover {
+    cursor: pointer;
+}
+
+
+/*footer */
+
+footer {
+    border-top: 1px solid #e4e4e4;
+    background-color:ghostwhite;
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
+
+.footer-message {
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin: 0.3rem 0;
+}
+
+.footer-contact {
+    font-size: 0.8rem;
+    margin-bottom: 0.6rem;
+
+}
+
+.footer-copy {
+    font-size: 0.8rem;
+    margin-top: 0.6rem;
 }
 
 /*반응형 설정*/
